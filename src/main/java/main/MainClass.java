@@ -2,6 +2,7 @@ package main;
 
 public class MainClass {
     public static void main(String[] args) {
-        new Game();
+        Thread gameThread = new Thread(new Game());
+        gameThread.start();
     }
 }
