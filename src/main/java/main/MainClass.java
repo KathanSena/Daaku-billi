@@ -1,8 +1,9 @@
 package main;
 
+import javax.swing.SwingUtilities;
+
 public class MainClass {
     public static void main(String[] args) {
-        Thread gameThread = new Thread(new Game());
-        gameThread.start();
+        SwingUtilities.invokeLater(() -> new Game().run());
     }
 }

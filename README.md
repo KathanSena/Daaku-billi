@@ -1,18 +1,22 @@
-## Getting Started
+# Daaku Billi
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A Java Swing side-scrolling platform game about a cat fighting forest bandits.
 
-## Folder Structure
+## Run it
 
-The workspace contains two folders by default, where:
+Open the folder in VS Code and run `main.MainClass` from the Java Projects view. The project uses `src/main/java` as its source folder and `bin` as its output folder.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Controls
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **A / D** or **Left / Right**: move
+- **Space**, **W**, or **Up**: jump
+- **X** or **J**: attack
+- **Esc**: pause / resume
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Waves and upgrades
 
-## Dependency Management
+Clear each wave to bring on the next. Enemy health, speed, and damage scale with each wave; armored brutes join from wave 2, forest wisps from wave 3, and a Bandit King boss appears every wave.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Enemies drop XP orbs. Leveling increases attack damage and maximum health. Bosses always drop a random bomb, heart, or blade upgrade; regular enemies can drop power-ups too. Bombs also appear at random and explode when collected, defeating enemies within range.
+
+Art assets are in `src/main/java/res` and are loaded from the classpath under `/res`.
